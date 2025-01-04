@@ -6,8 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /* --first-color: hsl(31, 100%, 70%); */
-  --first-color: hsl(288, 100%, 79%);
+  --first-color: hsl(234, 100%, 82%);
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --title-color: hsl(0, 0%, 15%);
@@ -110,7 +109,6 @@ button {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  /* --first-color: hsl(31, 76%, 74%); */
   --first-color: hsl(288, 100%, 79%);
   --button-color: hsl(0, 0%, 24%);
   --button-color-alt: hsl(0, 0%, 28%);
