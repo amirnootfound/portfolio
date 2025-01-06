@@ -1,4 +1,3 @@
-
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -57,27 +56,6 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-
-const cart = document.getElementById('cart'),
-    cartShop = document.getElementById('cart-shop'),
-    cartClose = document.getElementById('cart-close')
-
-
-
-if (cartShop) {
-    cartShop.addEventListener('click', () => {
-        cart.classList.add('show-cart')
-    })
-}
-
-
-
-if (cartClose) {
-    cartClose.addEventListener('click', () => {
-        cart.classList.remove('show-cart')
-    })
-}
-
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
@@ -95,24 +73,24 @@ if (selectedTheme) {
 
 
 themeButton.addEventListener('click', () => {
-
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
-
-const hour = new Date().getHours();
-if (hour < 12) {
-    document.title = "Good Morning! ☀️";
-} else if (hour < 18) {
-    document.title = "Good Afternoon! 🌤️";
-} else {
-    document.title = "Good Evening! 🌙";
-}
-
 function showAlert() {
     alert("I AM NOT USING FACEBOOK LOL")
 }
+
+function showAlertFooter() {
+    alert("That make sense")
+}
+
+document.getElementById('celebrate').addEventListener('click', () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  });
