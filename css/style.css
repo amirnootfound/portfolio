@@ -115,7 +115,7 @@ button {
 body.dark-theme {
   --first-color: hsl(288, 100%, 79%);
   --button-color: hsl(0, 0%, 24%);
-  --button-color-alt: hsl(0, 0%, 28%);
+  --button-color-alt: hsl(0, 0%, 35%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 75%);
   --body-color: hsl(0, 0%, 12%);
@@ -336,6 +336,16 @@ body.dark-theme {
   column-gap: 1rem;
 }
 
+.facebook {
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  transition: .3s;
+}
+
+.facebook:hover {
+  color: var(--title-color);
+}
+
 .home__social-link {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
@@ -382,6 +392,7 @@ body.dark-theme {
   padding: 1.25rem 2rem;
   font-weight: var(--font-medium);
   transition: .3s;
+  border: 1px solid var(--title-color);
 }
 
 .button:hover {
@@ -460,8 +471,9 @@ body.dark-theme {
 .featured__button {
   font-size: var(--small-font-size);
   height: 55px;
-  border-radius: 13px;
+  border-radius: 14px;
   text-align: center;
+  border: 2px solid var(--title-color);
 }
 
 .featured__desc {
@@ -578,7 +590,7 @@ body.dark-theme {
   text-align: center;
   row-gap: 2.5rem;
 
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .contactme__title {
@@ -606,7 +618,7 @@ body.dark-theme {
   padding: 1.25rem 1rem;
   color: hsl(0, 0%, 15%);
 
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 .contactme__text {
@@ -616,6 +628,8 @@ body.dark-theme {
   padding: 1.25rem 1rem;
   color: hsl(0, 0%, 15%);
   font-family: 'Sora';
+
+  border-radius: 8px;
 }
 
 .btn__contact {
@@ -850,11 +864,6 @@ body.dark-theme {
   .home__social {
     top: 47%;
     column-gap: 2rem;
-  }
-
-  .featured__title,
-  .featured__price {
-    /* font-size: var(--normal-font-size); */
   }
 
   .story__container,

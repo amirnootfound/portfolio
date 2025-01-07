@@ -79,18 +79,43 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-function showAlert() {
-    alert("I AM NOT USING FACEBOOK LOL")
+document.getElementById('celebrate').addEventListener('click', () => {
+    confetti({
+        particleCount: 200,
+        spread: 150,
+        origin: { y: 0.6 }
+    });
+});
+
+let firstButtonClicked = false;
+let count = 1;
+
+function showAlertFirstButton() {
+    if(count < 3 ) {
+        alert("I AM NOT USING FACEBOOK LOL")
+        count += 1
+    } else if(count < 5) {
+        alert("yo stop")
+        count += 1
+    } else if(count >= 10000){
+        window.location.href='https://www.facebook.com/lone.iines.12/'
+        count += 1
+    } else {
+        count += 1
+        alert(`Ok, You have to click 10000 times to get my FACEBOOK, ya sure? :> Count = ${count}`)
+    }
+
+    firstButtonClicked = true
+}
+
+function showAlertSecondButton() {
+    if (firstButtonClicked) {
+        alert("AGAIN??? I'm not using FACEBOOK!!!!")
+    } else {
+        alert("I AM NOT USING FACEBOOK!!!")
+    }
 }
 
 function showAlertFooter() {
     alert("That make sense")
 }
-
-document.getElementById('celebrate').addEventListener('click', () => {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-  });

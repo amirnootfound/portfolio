@@ -16,12 +16,19 @@
     <title>Amir-Dev</title>
     <meta name="description"
         content="Welcome to Amir's personal website. Explore projects, portfolio, all about IT and programming.">
-    <meta name="keywords" content="Amir, Amir's website, Amir's IT portfolio, Amir's programming blog">
-    <meta property="og:title" content="Amir's World">
-    <meta property="og:type" content="website">
+    <meta name="keywords"
+        content="Amir, Amir's website, Amir's IT portfolio, Amir's programming blog, Amirnotfound, amirnotfound website">
+    <meta property="og:title" content="Welcome to Amir's world">
     <meta property="og:description"
         content="Welcome to Amir's personal website, Explore projects, portfolio, all about IT and programming.">
     <meta property="og:image" content="https://i.pinimg.com/originals/62/69/67/6269671502ca08c6c403d23277142239.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://amirby.com">
+    <meta property="og:site_name" content="AmirBy">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Saul Goodman in front of the American Flag">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:updated_time" content="<?= date('c', filemtime(__FILE__)) ?>">
 </head>
 
 <body>
@@ -75,7 +82,7 @@
                 </div>
 
                 <div class="home__social">
-                    <a onclick={showAlert()} class="home__social-link">
+                    <a onclick={showAlertFirstButton()} class="facebook">
                         Facebook
                     </a>
                     <a href="https://twitter.com/rpamirnotfound" target="_blank" class="home__social-link">
@@ -92,8 +99,8 @@
                         Ambitious and dedicated 17-year-old high school student with a strong interest in Information
                         Technology, focusing on Software Engineering and Data Science. Actively preparing for admission
                         to a U.S. college, where I plan to major in IT and later specialise in programming and
-                        innovative technologies. Engaged in self-learning and hands-on projects, including developing
-                        skills in Python and industry-relevant tools. Exploring leadership and technology through
+                        innovative technologies. Engaged in self-learning and hands-on projects. Exploring leadership
+                        and technology through
                         various educational programs and inspired by global opportunities in the tech field. With a
                         solid foundation in programming and a passion for creating impactful software solutions, I am
                         determined to contribute to meaningful projects and make a positive impact in the tech industry.
@@ -129,7 +136,7 @@
                             </span>
                             <div class="featured__desc">
                                 <div class="featured__2">Technologies: <br> React Native, Expo, Android Studio</div>
-                                <div class="featured__2">Languages: <br> TypeScript, JavaScript, Kotlin, Css </div>
+                                <div class="featured__2">Languages: <br> JS, TS, Kotlin, HTML, Css</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -152,7 +159,7 @@
                                 addition, subtraction, multiplication, and division. I also implemented features like
                                 deleting digits, clearing inputs, and formatting numbers for better readability.</span>
                             <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML JavaScript, Css</div>
+                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -178,7 +185,7 @@
                                 development
                                 skills.</span>
                             <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, JavaScript, Css</div>
+                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -206,7 +213,7 @@
                                 honesty"
                             </span>
                             <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, JavaScript, Css</div>
+                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -236,7 +243,7 @@
                                 the
                                 process involved a bit of "creative borrowing" along the way.</span>
                             <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, JavaScript</div>
+                                <div class="featured__2">Languages: <br> HTML, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -260,7 +267,7 @@
                                 domain management and web
                                 hosting.</span>
                             <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, JavaScript, Css</div>
+                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
@@ -351,7 +358,7 @@
                         purpose, innovation, and success.
                     </p>
 
-                    <button onclick="" class="button button--small" id="celebrate">Wow button</button>
+                    <button onclick="" class="button button--small" id="celebrate">I feel Inspired!</button>
                 </div>
             </div>
         </section>
@@ -470,7 +477,7 @@
                 <h3 class="footer__title">My Social Media</h3>
 
                 <ul class="footer__social">
-                    <a onclick="showAlert()" class="footer__social-link">
+                    <a onclick="showAlertSecondButton()" class="footer__social-link">
                         <i class='bx bxl-facebook'></i>
                     </a>
 
