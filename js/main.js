@@ -119,3 +119,7 @@ function showAlertSecondButton() {
 function showAlertFooter() {
     alert("That make sense")
 }
+
+function showAlertSite() {
+    alert("You're right on that page!)")
+}

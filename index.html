@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/brain.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
@@ -94,21 +95,30 @@
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Who am I?</h1>
+                    <div class="animated-text">
+                        <h1 class="home__title">Hello World!</h1>
+                        I'm a <span></span>
+                    </div>
+
                     <p class="home__description">
-                        Ambitious and dedicated 17-year-old high school student with a strong interest in Information
-                        Technology, focusing on Software Engineering and Data Science. Actively preparing for admission
-                        to a U.S. college, where I plan to major in IT and later specialise in programming and
-                        innovative technologies. Engaged in self-learning and hands-on projects. Exploring leadership
+                        Me Ambitious and dedicated 17-year-old high school student with a strong interest in Information
+                        Technology, focusing on Software Engineering and Data Science. Engaged in self-learning and
+                        hands-on projects. Exploring leadership
                         and technology through
                         various educational programs and inspired by global opportunities in the tech field. With a
                         solid foundation in programming and a passion for creating impactful software solutions, I am
                         determined to contribute to meaningful projects and make a positive impact in the tech industry.
                     </p>
 
-                    <div class="home__btns">
-                        <a href="#contacts" class="button button--gray button--small">
-                            Contact Me
+                    <div class="home__btns" style="gap: 20px;"">
+                        <div class="home__btns-2">
+                            <button class="button rainbow-button">
+                                <a href="https://github.com/amirnootfound" target="_blank">My GitHub</a>
+                              </button>
+                        </div>
+                        
+                        <a href=" #contacts" class="button button--gray button--small">
+                        Contact Me
                         </a>
                     </div>
                 </div>
@@ -127,15 +137,19 @@
                     <div class="featured__card-list grid">
                         <div class="featured__data">
                             <h3 class="featured__title">Coffee-Shop</h3>
-                            <span class="featured__price">
-                                A mobile coffee shop app developed with Expo and React Native to enhance customer
-                                experience. The app features a sleek menu interface, online ordering with drink
-                                customization, a loyalty program, and location services to find nearby stores. Designed
-                                for convenience, it also supports push notifications for updates on promotions and new
-                                offerings.
-                            </span>
+                            <div class="featured__text-box">
+                                <span class="featured__price">
+                                    A mobile coffee shop app developed with Expo and React Native to enhance customer
+                                    experience. The app features a sleek menu interface, online ordering with drink
+                                    customization, a loyalty program, and location services to find nearby stores.
+                                    Designed
+                                    for convenience, it also supports push notifications for updates on promotions and
+                                    new
+                                    offerings.
+                                </span>
+                            </div>
                             <div class="featured__desc">
-                                <div class="featured__2">Technologies: <br> React Native, Expo, Android Studio</div>
+                                <div class="featured__2">Technologies: <br> React Native, Expo, Android Studio </div>
                                 <div class="featured__2">Languages: <br> JS, TS, Kotlin, HTML, Css</div>
                             </div>
                         </div>
@@ -153,11 +167,16 @@
                     <div class="featured__card-list grid">
                         <div class="featured__data">
                             <h3 class="featured__title">Calculator</h3>
-                            <span class="featured__price">I developed a simple and responsive web calculator using my
-                                basic
-                                knowledge HTML, CSS, and JavaScript. It supports basic arithmetic operations such as
-                                addition, subtraction, multiplication, and division. I also implemented features like
-                                deleting digits, clearing inputs, and formatting numbers for better readability.</span>
+                            <div class="featured__text-box">
+                                <span class="featured__price">I developed a simple and responsive web calculator using
+                                    my
+                                    basic
+                                    knowledge HTML, CSS, and JavaScript. It supports basic arithmetic operations such as
+                                    addition, subtraction, multiplication, and division. I also implemented features
+                                    like
+                                    deleting digits, clearing inputs, and formatting numbers for better readability.
+                                </span>
+                            </div>
                             <div class="featured__desc">
                                 <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
@@ -176,14 +195,19 @@
                     <div class="featured__card-list grid">
                         <div class="featured__data">
                             <h3 class="featured__title">Figma</h3>
-                            <span class="featured__price">After finishing my programming courses, I decided to practice
-                                my
-                                skills by working on a real-world project. I selected a design from Figma and converted
-                                it
-                                into a fully responsive and pixel-perfect layout. Although the project didn’t have a
-                                specific client or purpose, it was a great opportunity to enhance my front-end
-                                development
-                                skills.</span>
+                            <div class="featured__text-box">
+                                <span class="featured__price">After finishing my programming courses, I decided to
+                                    practice
+                                    my
+                                    skills by working on a real-world project. I selected a design from Figma and
+                                    converted
+                                    it
+                                    into a fully responsive and pixel-perfect layout. Although the project didn’t have a
+                                    specific client or purpose, it was a great opportunity to enhance my front-end
+                                    development
+                                    skills.
+                                </span>
+                            </div>
                             <div class="featured__desc">
                                 <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
@@ -202,16 +226,20 @@
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">For-fun</h3>
-                            <span class="featured__price">I was very bored and i made this funny website. There's a
-                                question
-                                translates as "Are you stupid" and two buttons one of them is "yes" and "no" the most
-                                funny
-                                thing that second button doesn't work correctly and it moves when you're trying to click
-                                on
-                                it, and by clicking on the first button appears text which is "Thank you for your
-                                honesty"
-                            </span>
+                            <h3 class="featured__title">Joke Website</h3>
+                            <div class="featured__text-box">
+                                <span class="featured__price">I was very bored and i made this funny website. There's a
+                                    question
+                                    translates as "Are you stupid" and two buttons one of them is "yes" and "no" the
+                                    most
+                                    funny
+                                    thing that second button doesn't work correctly and it moves when you're trying to
+                                    click
+                                    on
+                                    it, and by clicking on the first button appears text which is "Thank you for your
+                                    honesty"
+                                </span>
+                            </div>
                             <div class="featured__desc">
                                 <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
@@ -230,18 +258,21 @@
                     <div class="featured__card-list grid">
                         <div class="featured__data">
                             <h3 class="featured__title">"Matrix"</h3>
-                            <span class="featured__price">This project is inspired by the iconic visuals of the
-                                movie
-                                The
-                                Matrix. It features the signature digital rain effect, where cascading green code
-                                flows
-                                down
-                                a dark background, creating a futuristic and immersive aesthetic. While heavily
-                                inspired
-                                by
-                                the original design, I recreated this effect myself (well, almost)—let's just say
-                                the
-                                process involved a bit of "creative borrowing" along the way.</span>
+                            <div class="featured__text-box">
+                                <span class="featured__price">This project is inspired by the iconic visuals of the
+                                    movie
+                                    The
+                                    Matrix. It features the signature digital rain effect, where cascading green code
+                                    flows
+                                    down
+                                    a dark background, creating a futuristic and immersive aesthetic. While heavily
+                                    inspired
+                                    by
+                                    the original design, I recreated this effect myself (well, almost)—let's just say
+                                    the
+                                    process involved a bit of "creative borrowing" along the way.
+                                </span>
+                            </div>
                             <div class="featured__desc">
                                 <div class="featured__2">Languages: <br> HTML, JS</div>
                             </div>
@@ -259,22 +290,24 @@
                     <div class="featured__card-list grid">
                         <div class="featured__data">
                             <h3 class="featured__title">Website</h3>
-                            <span class="featured__price">I developed this website to showcase my projects and
-                                skills. It took me about a week to design and implement, focusing on functionality,
-                                responsive design, and a seamless user experience across all devices.
-                                After completing the development, I bought a domain and hosted the
-                                website to make it accessible online. This project allowed me to gain experience in
-                                domain management and web
-                                hosting.</span>
+                            <div class="featured__text-box">
+                                <span class="featured__price">I developed this website to showcase my projects and
+                                    skills. It took me about a week to design and implement, focusing on functionality,
+                                    responsive design, and a seamless user experience across all devices.
+                                    After completing the development, I bought a domain and hosted the
+                                    website to make it accessible online. This project allowed me to gain experience in
+                                    domain management and web
+                                    hosting.
+                                </span>
+                            </div>
                             <div class="featured__desc">
                                 <div class="featured__2">Languages: <br> HTML, Css, JS</div>
                             </div>
                         </div>
                         <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/portfolio'"
-                                class="button featured__button">
-                                View Project
-                            </button>
+                            <button onclick="window.location.href='https://github.com/amirnootfound/biography'"
+                                class="button featured__button">View Project</button>
+                            <button onclick="showAlertSite()" class="button featured__button">WebSite</button>
                         </div>
                     </div>
                 </article>
@@ -426,7 +459,7 @@
 
                     <button class="abilities__button"
                         onclick="window.location.href='https://www.google.com/search?q=what+is+kali+linux&sca_esv=4d286daafcdb2984&sxsrf=ADLYWIJrsCO0Lgrb0EcVbcLWgovpyQ36Zg%3A1735943921556&ei=8WZ4Z97UIdSawPAPvbyI0Q8&oq=what+is+kal&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3doYXQgaXMga2FsKgIIADIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywFIiBlQvAlYwQtwAngBkAEAmAGEAaAB9wKqAQMwLjO4AQPIAQD4AQGYAgWgAqcDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgUQABiABJgDAIgGAZAGCpIHAzIuM6AH5Q8&sclient=gws-wiz-serp'">
-                        <i class='bx bx-link-alt'>`</i>
+                        <i class='bx bx-link-alt'></i>
                     </button>
                 </article>
 
