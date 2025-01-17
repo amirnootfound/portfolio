@@ -117,9 +117,7 @@ function showAlertSecondButton() {
 }
 
 function showAlertFooter() {
-    alert("That make sense")
+    window.location.href='https://github.com/amirnootfound?tab=repositories'
 }
 
-function showAlertSite() {
-    alert("You're right on that page!)")
-}
+document.querySelector('body').classList.toggle('dark-theme');

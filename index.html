@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="img/brain.png" type="image/x-icon">
+    <link rel="icon" href="img/lettera.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-    </style>
     <title>Amir-Dev</title>
     <meta name="description"
         content="Welcome to Amir's personal website. Explore projects, portfolio, all about IT and programming.">
@@ -83,7 +80,7 @@
                 </div>
 
                 <div class="home__social">
-                    <a onclick={showAlertFirstButton()} class="facebook">
+                    <a onclick={showAlertFirstButton()} class="home__social-link">
                         Facebook
                     </a>
                     <a href="https://twitter.com/rpamirnotfound" target="_blank" class="home__social-link">
@@ -110,18 +107,14 @@
                         determined to contribute to meaningful projects and make a positive impact in the tech industry.
                     </p>
 
-                    <div class="home__btns" style="gap: 20px;"">
-                        <div class="home__btns-2">
-                            <button class="button rainbow-button">
-                                <a href="https://github.com/amirnootfound" target="_blank">My GitHub</a>
-                              </button>
-                        </div>
-                        
-                        <a href=" #contacts" class="button button--gray button--small">
-                        Contact Me
-                        </a>
+                    <div class="home__btns" style="gap: 20px;">
+                        <div class=" home__btns-2">
+                        <button class="button rainbow-button">
+                            <a href="https://github.com/amirnootfound" target="_blank">My GitHub</a>
+                        </button>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -130,35 +123,41 @@
             <h2 class="section__title">
                 Applications
             </h2>
-
             <div class="featured__container grid">
                 <!-- Cart #1 -->
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">Coffee-Shop</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">
-                                    A mobile coffee shop app developed with Expo and React Native to enhance customer
-                                    experience. The app features a sleek menu interface, online ordering with drink
-                                    customization, a loyalty program, and location services to find nearby stores.
-                                    Designed
-                                    for convenience, it also supports push notifications for updates on promotions and
-                                    new
-                                    offerings.
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Mobile Development</strong>
+                                <span class="featured__title">Coffee-Shop</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Technologies: <br> React Native, Expo, Android Studio </div>
-                                <div class="featured__2">Languages: <br> JS, TS, Kotlin, HTML, Css</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Build an intuitive system to manage orders, inventory, and customer data for a coffee shop, focusing on navigation logic and user registration through Firebase.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Frontend development, expo system, and responsive UI design.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>HTML, CSS, TypeScript, Expo, JavaScript, Android Studio</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>The project encouraged experimentation with new technologies, with initial features like navigation and registration now functional.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: Dec 2, 2024
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/project-a'"
-                                class="button featured__button">
-                                View Project
-                            </button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/finallyProject'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
 
@@ -166,27 +165,36 @@
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">Calculator</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">I developed a simple and responsive web calculator using
-                                    my
-                                    basic
-                                    knowledge HTML, CSS, and JavaScript. It supports basic arithmetic operations such as
-                                    addition, subtraction, multiplication, and division. I also implemented features
-                                    like
-                                    deleting digits, clearing inputs, and formatting numbers for better readability.
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Frontend Development</strong>
+                                <span class="featured__title">Calculator</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Build an intuitive system to manage orders, inventory, and customer data for a coffee shop, focusing on navigation logic and user registration through Firebase.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Frontend development, responsive design, and JavaScript functionality.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>HTML, CSS, JavaScript</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>The project provided hands-on experience with React, resulting in a functional, user-friendly calculator with smooth interactions.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: Mar 23, 2022
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/calculator'"
-                                class="button featured__button">
-                                View Project
-                            </button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/calculator'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
 
@@ -194,31 +202,36 @@
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">Figma</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">After finishing my programming courses, I decided to
-                                    practice
-                                    my
-                                    skills by working on a real-world project. I selected a design from Figma and
-                                    converted
-                                    it
-                                    into a fully responsive and pixel-perfect layout. Although the project didn’t have a
-                                    specific client or purpose, it was a great opportunity to enhance my front-end
-                                    development
-                                    skills.
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Frontend Development</strong>
+                                <span class="featured__title">"Matrix"</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Develop an application to perform matrix operations such as addition, subtraction, multiplication, and inversion.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Frontend development, algorithm implementation for matrix operations, and responsive UI design.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>HTML, JavaScript</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>This project enhanced understanding of matrix mathematics and programming logic, resulting in a tool that efficiently handles complex matrix operations with an intuitive interface.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: Feb 7, 2023
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button
-                                onclick="window.location.href='https://github.com/amirnootfound/full-website-gimalay'"
-                                class="button featured__button">
-                                View Project
-                            </button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/matrica'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
 
@@ -226,30 +239,36 @@
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">Joke Website</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">I was very bored and i made this funny website. There's a
-                                    question
-                                    translates as "Are you stupid" and two buttons one of them is "yes" and "no" the
-                                    most
-                                    funny
-                                    thing that second button doesn't work correctly and it moves when you're trying to
-                                    click
-                                    on
-                                    it, and by clicking on the first button appears text which is "Thank you for your
-                                    honesty"
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Frontend Development</strong>
+                                <span class="featured__title">"JK"</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Create an interactive fun website featuring a humorous question and dynamic button behavior.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Frontend development, interactive button functionality, and responsive UI design.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>HTML, CSS, JavaScript</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>The project provided an opportunity to explore user interaction, creating a playful experience with buttons that move and respond to clicks, adding humor to the web design.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: Jan 24, 2023
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/biography'"
-                                class="button featured__button">View Project</button>
-                            <button onclick="window.location.href='https://amirnootfound.github.io/biography/'"
-                                class="button featured__button">WebSite</button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/biography'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
 
@@ -257,58 +276,73 @@
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">"Matrix"</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">This project is inspired by the iconic visuals of the
-                                    movie
-                                    The
-                                    Matrix. It features the signature digital rain effect, where cascading green code
-                                    flows
-                                    down
-                                    a dark background, creating a futuristic and immersive aesthetic. While heavily
-                                    inspired
-                                    by
-                                    the original design, I recreated this effect myself (well, almost)—let's just say
-                                    the
-                                    process involved a bit of "creative borrowing" along the way.
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Backend Development</strong>
+                                <span class="featured__title">Movie Server</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, JS</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Build a movie server that displays movie information dynamically using EJS templates.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Server-side development, dynamic content rendering, and template integration</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>Node.js, EJS, HTML, CSS, JavaScript.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>The project allowed for practical experience with EJS for server-side rendering, resulting in a fully functional movie server that displays accurate and dynamic movie information.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: Mar 23, 2022
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/matrica'"
-                                class="button featured__button">View Project</button>
-                            <button onclick="window.location.href='https://amirnootfound.github.io/matrica/'"
-                                class="button featured__button">Website</button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/films_server'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
+
                 <!-- Cart #6 -->
                 <article class="featured__card">
                     <div class="featured__card-list grid">
                         <div class="featured__data">
-                            <h3 class="featured__title">Website</h3>
-                            <div class="featured__text-box">
-                                <span class="featured__price">I developed this website to showcase my projects and
-                                    skills. It took me about a week to design and implement, focusing on functionality,
-                                    responsive design, and a seamless user experience across all devices.
-                                    After completing the development, I bought a domain and hosted the
-                                    website to make it accessible online. This project allowed me to gain experience in
-                                    domain management and web
-                                    hosting.
-                                </span>
+                            <div class="featured__content-top">
+                                <strong>Frontend Development</strong>
+                                <span class="featured__title">"MoonLight"</span>
                             </div>
-                            <div class="featured__desc">
-                                <div class="featured__2">Languages: <br> HTML, Css, JS</div>
+                            <div class="featured__content-down">
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Objective: </strong><span>Develop an engaging website featuring a dynamic moon animation that reacts to scrolling, creating an immersive user experience.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Techniques Used: </strong><span>Scroll-based animation, responsive web design, and smooth transitions..</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Tools/Libraries: </strong><span>HTML, CSS, JavaScript</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <div><i class='bx bx-check-circle'></i> <strong>Impact: </strong><span>This project offered significant experience in creating advanced animations, improving understanding of scroll-based interactions and enhancing skills in designing visually appealing and interactive websites.</span></div>
+                                </div>
+
+                                <div class="featured__content-down-block">
+                                    <i class='bx bx-time-five'></i> Date: May 12, 2022
+                                </div>
                             </div>
                         </div>
-                        <div class="featured__btn-container">
-                            <button onclick="window.location.href='https://github.com/amirnootfound/biography'"
-                                class="button featured__button">View Project</button>
-                            <button onclick="showAlertSite()" class="button featured__button">WebSite</button>
-                        </div>
+                        <button onclick="window.location.href='https://github.com/amirnootfound/moonlight'"
+                            class="button featured__button">
+                            View Project
+                        </button>
                     </div>
                 </article>
             </div>
@@ -323,7 +357,7 @@
                     </h2>
 
                     <h1 class="story__title">
-                        Inspirational Moment of this year
+                        Inspirational Moment of this year.
                     </h1>
 
                     <p class="story__description">
@@ -533,16 +567,16 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a onclick="showAlertFooter()" class="footer__link">Support Center</a>
+                        <a class="footer__link">Support Center</a>
                     </li>
                     <li>
-                        <a onclick="showAlertFooter()" class="footer__link">Customer Support</a>
+                        <a class="footer__link">Customer Support</a>
                     </li>
                     <li>
-                        <a onclick="showAlertFooter()" class="footer__link">About Us</a>
+                        <a class="footer__link">About Us</a>
                     </li>
                     <li>
-                        <a onclick="showAlertFooter()" class="footer__link">Copy Right</a>
+                        <a class="footer__link">Copy Right</a>
                     </li>
                 </ul>
             </div>
@@ -570,15 +604,15 @@
                 <h3 class="footer__title">Our information</h3>
 
                 <ul class="footer__list">
-                    <li>1405 - KG</li>
+                    <li>996 - KG</li>
                     <li>Kyrgyzstan, Bishkek</li>
-                    <li>110010101</li>
+                    <li>720001</li>
                 </ul>
 
             </div>
         </div>
 
-        <span class="footer__copy">&#169; notFoundsStudios. All rights reserved.</span>
+        <span class="footer__copy">&#169; notFoundsStudios. All rights reserved. Maybe</span>
     </footer>
 
 
