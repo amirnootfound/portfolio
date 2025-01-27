@@ -48,10 +48,8 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if (this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
@@ -70,7 +68,6 @@ if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
-
 
 themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
@@ -97,12 +94,12 @@ function showAlertFirstButton() {
     } else if(count < 5) {
         alert("yo stop")
         count += 1
-    } else if(count >= 10000){
+    } else if(count >= 1000){
         window.location.href='https://www.facebook.com/lone.iines.12/'
         count += 1
     } else {
         count += 1
-        alert(`Ok, You have to click 10000 times to get my FACEBOOK, ya sure? :> Count = ${count}`)
+        alert(`Ok, You have to click 1000 times to get my FACEBOOK, u sure? :> Count = ${count}`)
     }
 
     firstButtonClicked = true
@@ -121,3 +118,13 @@ function showAlertFooter() {
 }
 
 document.querySelector('body').classList.toggle('dark-theme');
+
+let d;
+d = new Date();
+
+function displayFullYear(date) {
+    document.querySelector('footer').innerHTML += `<span class="footer__copy">Copyright &#169; ${date.getFullYear()} notFoundsStudios. All rights reserved</span>`;
+    
+}
+
+displayFullYear(d);
