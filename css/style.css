@@ -846,11 +846,6 @@ body.dark-theme {
     justify-content: center;
   }
 
-  .featured__card:hover {
-    box-shadow: none;
-    translate: none;
-  }
-
   .featured__title {
     font-size: 38px;
   }
@@ -870,7 +865,6 @@ body.dark-theme {
   .featured__content-down-block {
     font-size: 13px;
   }
-
 
 
   .featured__button {

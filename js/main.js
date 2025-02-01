@@ -128,3 +128,12 @@ function displayFullYear(date) {
 }
 
 displayFullYear(d);
+
+// Fonts Loading
+document.fonts.ready.then(() => {
+    console.log('Все шрифты загружены!');
+    document.body.style.display = 'block';
+}).catch(error => {
+    console.error('Ошибка загрузки шрифтов:', error);
+    document.body.innerHTML = '<p>Ошибка загрузки шрифтов.</p>';
+});

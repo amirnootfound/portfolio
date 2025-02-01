@@ -21,7 +21,7 @@ This website is created to display my accomplishments in IT, software developmen
 - **Figma** — Design mockups for the site.
 
 ## Project Structure
-/my_website /img # Images, icons, and other resources /css # CSS styles /js # JavaScript files for interaction index.html #
+/my_website /img # Images, icons, and other resources /fonts # certain amount of fonts taken from Apple /css # CSS styles /js # JavaScript files for interaction index.html #
 
 ## Installation and Setup
 
