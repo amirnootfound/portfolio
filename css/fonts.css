@@ -1,14 +1,20 @@
 @font-face {
-    font-family: 'SF-Pro.ttf';
-    src: url('./fonts/SF-Pro.ttf') format('truetype');
-}
-
-@font-face {
+    font-family: "SF Pro";
+    src: url("/fonts/SF-Pro.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
     font-family: 'SF Pro Display';
-    src: url('./fonts/SF-Pro-Display-Bold.otf') format('otf');
-}
-
-@font-face {
+    src: url("/fonts/SF-Pro-Display-Bold.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
     font-family: 'SF Pro Text';
-    src: url('./fonts/SF-Pro-Text-Regular') format('otf');
-}
+    src: url('/fonts/SF-Pro-Text-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
