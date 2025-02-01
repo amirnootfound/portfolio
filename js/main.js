@@ -131,9 +131,17 @@ displayFullYear(d);
 
 // Fonts Loading
 document.fonts.ready.then(() => {
-    console.log('Все шрифты загружены!');
+    // console.log('Все шрифты загружены!');
     document.body.style.display = 'block';
 }).catch(error => {
-    console.error('Ошибка загрузки шрифтов:', error);
-    document.body.innerHTML = '<p>Ошибка загрузки шрифтов.</p>';
+    // console.error('Ошибка загрузки шрифтов:', error);
+    // document.body.innerHTML = '<p>Ошибка загрузки шрифтов.</p>';
 });
+
+setTimeout(() => {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    loader.style.display = 'none';
+    content.style.display = 'block';
+}, 2000);
