@@ -29,4 +29,6 @@ To run the project locally:
 
 1. You're not supposed to be downloading my website. Technically you can, but I'm not recommending you to do this, pls.
 
-## P.S try to get my FaceBook on my page, I got something for ya <3
+## Mini Game
+
+Click 1000 times to Facebook Icon and try to get my Facebook
