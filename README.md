@@ -10,7 +10,7 @@ This website is created to display my accomplishments in IT, software developmen
 - **Design and Development**: The entire site was designed and developed from me.
 - **Interactivity**: Includes animations and user interactions to demonstrate my frontend development skills.
 - **Responsiveness**: The website is responsive and optimized for different screen sizes and devices.
-- **Typography**: The font you see on WebSite is - San Francisco "Text" and "Display" fonts (SF Pro Text, Display) by Apple. It looks great isn't it?
+- **Typography**: The font you see on WebSite is - San Francisco "Text" and "Display" fonts (SF Pro Text, SF Pro Display) by Apple.
 
 ## Technologies Used
 
@@ -18,6 +18,7 @@ This website is created to display my accomplishments in IT, software developmen
 - **CSS3** — Styling, responsiveness, and animations.
 - **JavaScript** — User interactions and dynamic content.
 - **Git** — Version control.
+- **Icons** - Box icons
 - **Figma** — Design mockups for the site.
 
 ## Project Structure
