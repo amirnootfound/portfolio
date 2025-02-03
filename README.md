@@ -28,7 +28,7 @@ This website is created to display my accomplishments in IT, software developmen
 
 To run the project locally:
 
-1. You're not supposed to be downloading my website. Technically you can, but I'm not recommending you to do this, pls.
+1. You're not supposed to be downloading my website. Technically you can, but I'm not recommending you (I didn't buy hosting services yet I'll do it later)
 
 ## Mini Game
 
