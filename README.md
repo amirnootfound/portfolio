@@ -18,7 +18,7 @@ This website is created to display my accomplishments in IT, software developmen
 - **CSS3** — Styling, responsiveness, and animations.
 - **JavaScript** — User interactions and dynamic content.
 - **Git** — Version control.
-- **Icons** — Box icons
+- **Icons** — Box icons.
 - **Figma** — Design mockups for the site.
 
 ## Project Structure
