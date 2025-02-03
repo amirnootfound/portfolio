@@ -129,19 +129,93 @@ function displayFullYear(date) {
 
 displayFullYear(d);
 
-// Fonts Loading
-document.fonts.ready.then(() => {
-    // console.log('Все шрифты загружены!');
-    document.body.style.display = 'block';
-}).catch(error => {
-    // console.error('Ошибка загрузки шрифтов:', error);
-    // document.body.innerHTML = '<p>Ошибка загрузки шрифтов.</p>';
+const words = ["Frontend Developer", "Software Engineer", "Social Engineer", "IT Specialist", "Applicant", "Web Developer"];
+const typingDelay = 150;
+const erasingDelay = 100;
+const newLetterDelay = 1000;
+let index = 0;
+let charIndex = 0;
+
+const typeTextSpan = document.querySelector(".typed");
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (words.length) {
+        setTimeout(type, newLetterDelay);
+    }
 });
 
-setTimeout(() => {
-    const loader = document.getElementById('loader');
-    const content = document.getElementById('content');
+function type() {
+    if (charIndex < words[index].length) {
+        typeTextSpan.textContent += words[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+    } else {
+        setTimeout(erase, newLetterDelay);
+    }
+}
 
-    loader.style.display = 'none';
-    content.style.display = 'block';
-}, 2000);
+function erase() {
+    if (charIndex > 0) {
+        typeTextSpan.textContent = words[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+    } else {
+        index++;
+        if (index >= words.length) {
+            index = 0;
+        }
+        setTimeout(type, newLetterDelay);
+    }
+}
+
+// const loader = document.getElementById("loader");
+// const content = document.getElementById("content");
+
+// function showLoader() {
+//     loader.style.display = "flex";
+//     content.style.opacity = "0";
+// }
+
+// function hideLoader() {
+//     loader.style.opacity = "0";
+//     setTimeout(() => loader.style.display = "none", 500);
+//     content.style.opacity = "1";
+// }
+
+// const isLoaded = ["12px", "16px", "20px", "32px", "10px", "18px", "36px", "48px"].some(size => document.fonts.check(`${size} 'SF Pro Display' `));
+
+// if (!isLoaded) {
+//     showLoader();
+// }
+// Promise.all([
+//     document.fonts.ready, // Ждём шрифты
+//     new Promise(resolve => window.addEventListener("load", resolve)), // Ждём все ресурсы
+//     fetch("https://jsonplaceholder.typicode.com/posts/1").then(res => res.json()) // Пример API-запроса
+// ]).then(hideLoader);
+
+const loader = document.getElementById("loader");
+const content = document.getElementById("content");
+
+function showLoader() {
+    loader.style.display = "flex";
+    content.style.opacity = "0";
+}
+
+function hideLoader() {
+    loader.style.opacity = "0";
+    setTimeout(() => loader.style.display = "none", 500);
+    content.style.opacity = "1";
+    localStorage.setItem("fontsLoaded", "true");
+}
+
+const fontsAlreadyLoaded = localStorage.getItem("fontsLoaded") === "true";
+
+if (!fontsAlreadyLoaded) {
+    showLoader();
+}
+
+Promise.all([
+    document.fonts.ready,
+    new Promise(resolve => window.addEventListener("load", resolve)),
+    fetch("https://jsonplaceholder.typicode.com/posts/1").then(res => res.json())
+]).then(hideLoader);

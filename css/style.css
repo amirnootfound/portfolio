@@ -366,6 +366,36 @@ body.dark-theme {
   font-family: var(--font-text);
 }
 
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--first-color);
+  animation: blink 0.8s infinite;
+}
+
+.typed {
+  background: linear-gradient(90deg, #ff6b6b, #f6d365, #96e6a1, #00e7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.js {
+  font-size: var(--h1-font-size);
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.home__title-container {
+  margin-bottom: 30px;
+  font-family: var(--font-display);
+}
+
 .facebook {
   color: var(--first-color);
   font-size: var(--smaller-font-size);
@@ -871,6 +901,10 @@ body.dark-theme {
     font-size: 52px;
   }
 
+  .home__title-container span {
+    font-size: 30px;
+  }
+
   .animated-text {
     margin-bottom: -15px;
   } 
@@ -1111,128 +1145,38 @@ body.dark-theme {
   }
 }
 
-.animated-text {
-  font-size: 32px;
-  font-weight: 600;
-  min-width: 280px;
-  margin-bottom: 35px;
-}
-
-.animated-text span {
-  position: relative;
-  background: linear-gradient(90deg, #ff6b6b, #f6d365, #96e6a1, #00e7ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.animated-text span::before {
-  content: "Frontend Developer";
-  animation: words 20s infinite;
-}
-
-.animated-text span::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  background-color: var(--body-color);
-  border-left: 2px solid var(--first-color);
-  right: -8px;
-  animation: cursor .8s infinite, typing 20s infinite alternate;
-}
-
-@keyframes cursor {
-  to {
-    border-left: 2px solid var(--body-color);
-  }
-}
-
-@keyframes words {
-
-  0%,
-  20% {
-    content: "Frontend Developer";
-  }
-
-  21%,
-  40% {
-    content: "Software Engineer";
-  }
-
-  41%,
-  60% {
-    content: "Social Engineer";
-  }
-
-  61%,
-  80% {
-    content: "Frontend Developer";
-  }
-
-  81%,
-  100% {
-    content: "Social Engineer";
-  }
-}
-
-@keyframes typing {
-
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
-}
-
 .fullscreen-loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--body-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   z-index: 1000;
+  background-color: white;
+  display: none; /* По умолчанию скрыт */
+  align-items: center;
+  justify-content: center;
+  opacity: 2;
+  transition: opacity 0.5s ease-out;
 }
 
 .spinner {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #3498db;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: black;
+  border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
-.fullscreen-loader p {
-  margin-top: 20px;
-  font-size: 18px;
-  color: var(--first-color);
+#content {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0; /* Начинаем с прозрачного контента */
+  
 }
