@@ -88,14 +88,14 @@ let firstButtonClicked = false;
 let count = 1;
 
 function showAlertFirstButton() {
-    if(count < 3 ) {
+    if (count < 3) {
         alert("I AM NOT USING FACEBOOK LOL")
         count += 1
-    } else if(count < 5) {
+    } else if (count < 5) {
         alert("yo stop")
         count += 1
-    } else if(count >= 1000){
-        window.location.href='https://www.facebook.com/lone.iines.12/'
+    } else if (count >= 1000) {
+        window.location.href = 'https://www.facebook.com/lone.iines.12/'
         count += 1
     } else {
         count += 1
@@ -114,7 +114,7 @@ function showAlertSecondButton() {
 }
 
 function showAlertFooter() {
-    window.location.href='https://github.com/amirnootfound?tab=repositories'
+    window.location.href = 'https://github.com/amirnootfound?tab=repositories'
 }
 
 document.querySelector('body').classList.toggle('dark-theme');
@@ -124,7 +124,7 @@ d = new Date();
 
 function displayFullYear(date) {
     document.querySelector('footer').innerHTML += `<span class="footer__copy">Copyright &#169; ${date.getFullYear()} notFoundsStudios. All rights reserved</span>`;
-    
+
 }
 
 displayFullYear(d);
@@ -202,20 +202,27 @@ function showLoader() {
 }
 
 function hideLoader() {
-    loader.style.opacity = "0";
-    setTimeout(() => loader.style.display = "none", 500);
-    content.style.opacity = "1";
-    localStorage.setItem("fontsLoaded", "true");
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        setTimeout(() => loader.style.display = "none", 500);
+        content.style.opacity = "1";
+    });
 }
 
-const fontsAlreadyLoaded = localStorage.getItem("fontsLoaded") === "true";
+showLoader();
 
-if (!fontsAlreadyLoaded) {
-    showLoader();
+const fontSizes = ["12px", "16px", "20px", "32px", "48px"];
+const fonts = ["SF Pro Display", "SF Pro Text", "SF Pro"];
+
+const fontsLoaded = fonts.every(font =>
+    fontSizes.some(size => document.fonts.check(`${size} '${font}'`))
+);
+
+if (fontsLoaded) {
+    hideLoader();
+} else {
+    Promise.all([
+        document.fonts.ready,
+        new Promise(resolve => window.addEventListener("load", resolve))
+    ]).then(hideLoader);
 }
-
-Promise.all([
-    document.fonts.ready,
-    new Promise(resolve => window.addEventListener("load", resolve)),
-    fetch("https://jsonplaceholder.typicode.com/posts/1").then(res => res.json())
-]).then(hideLoader);

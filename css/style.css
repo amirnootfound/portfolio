@@ -1153,7 +1153,7 @@ body.dark-theme {
   height: 100%;
   z-index: 1000;
   background-color: white;
-  display: none; /* По умолчанию скрыт */
+  display: none;
   align-items: center;
   justify-content: center;
   opacity: 2;
@@ -1177,6 +1177,6 @@ body.dark-theme {
 
 #content {
   transition: opacity 0.5s ease-in-out;
-  opacity: 0; /* Начинаем с прозрачного контента */
+  opacity: 0;
   
 }
