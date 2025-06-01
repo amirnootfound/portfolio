@@ -32,4 +32,4 @@ To run the project locally:
 
 ## Mini Game
 
-Click 1000 times to Facebook Icon and try to get my Facebook
+Go sleep
