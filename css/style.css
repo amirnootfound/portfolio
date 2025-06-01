@@ -140,8 +140,8 @@ button {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  /* --first-color: hsl(54, 100%, 77%); */
-  --first-color: hsl(234, 100%, 82%);
+  --first-color: hsl(285, 100%, 72%);
+  /* --first-color: hsl(234, 100%, 82%); */
   --button-color: #2997FF;
   --button-color-alt: #0071E3;
   --title-color: hsl(0, 0%, 95%);
@@ -360,9 +360,9 @@ body.dark-theme {
   position: absolute;
   top: 35%;
   left: -5rem;
-  transform: rotate(-90deg);
   display: flex;
-  column-gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
   font-family: var(--font-text);
 }
 
@@ -387,7 +387,7 @@ body.dark-theme {
 
 @keyframes blink {
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -834,6 +834,73 @@ body.dark-theme {
   background: hsl(0, 0%, 17%);
 }
 
+.profile-section {
+  text-align: center;
+  padding: 2rem 1rem 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  display: none;
+}
+
+.stats {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(7px);
+  padding: 16px;
+  height: 170px;
+  color: #1d1d1f;
+  border-radius: 14px;
+  width: 160px;
+  height: 190px;
+  margin-right: -235px;
+  margin-bottom: 6px;
+  display: inline-block;
+  text-align: left;
+  font-style: var(--font-text);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.stats p {
+  font-family: var(--font-text);
+  margin: 10px 0;
+  font-size: 10px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.stats h4 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  overflow-wrap: break-word;
+  white-space: normal;
+  color: #1d1d1f;
+}
+
+.email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  font-family: var(--font-text);
+  font-weight: 600;
+  display: none;
+}
+
+.home__title-2 {
+  display: none;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 450px) {
@@ -842,12 +909,54 @@ body.dark-theme {
     margin-right: var(--mb-1);
   }
 
+  .js  {
+    display: none;
+  }
+
+  home__title-2 {
+    display: block;
+    font-family: var(--font-display);
+  }
+
+  .home__description {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
   .home__img {
-    height: 320px;
+    height: 420px;
+    width: auto;
+    position: absolute;
+  }
+
+  .stats {
+    display: block;
+  }
+
+  .home__img-bg {
+    transform: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 40px 0;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .home__social {
+    top: 28%;
+    flex-direction: column;
+    column-gap: 400px;
+    gap: 20px;
+    left: 0.5rem;
+    transform: none;
   }
 
   .home__title {
     font-size: 2.7rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    font-family: var(--font-display);
   }
 
   .animated-text span {
@@ -897,17 +1006,22 @@ body.dark-theme {
     font-size: 16px;
   }
 
-  .home__title {
-    font-size: 52px;
+  .home__title-container span {
+    display: none;
   }
 
-  .home__title-container span {
-    font-size: 30px;
+  .home__title-container p {
+    display: block;
+    font-size: 34px;
   }
 
   .animated-text {
     margin-bottom: -15px;
-  } 
+  }
+
+  .nav__logo {
+    font-size: 1.2rem;
+  }
 }
 
 /* For medium devices */
@@ -936,12 +1050,15 @@ body.dark-theme {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .featured__content-top strong {
     font-size: 16px;
   }
+
   .featured__title {
     font-size: 26px;
   }
+
   .featured__content-down-block {
     font-size: 10px;
   }
@@ -1061,7 +1178,7 @@ body.dark-theme {
 
   .featured__content-down-block {
     /* font-size: 13px; */
-  } 
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1171,12 +1288,12 @@ body.dark-theme {
 
 @keyframes spin {
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 #content {
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
-  
+
 }
