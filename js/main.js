@@ -123,13 +123,13 @@ let d;
 d = new Date();
 
 function displayFullYear(date) {
-    document.querySelector('footer').innerHTML += `<span class="footer__copy">Copyright &#169; ${date.getFullYear()} notFoundsStudios. All rights reserved</span>`;
+    document.querySelector('footer').innerHTML += `<span class="footer__copy">Copyright &#169; ${date.getFullYear()}. All rights reserved</span>`;
 
 }
 
 displayFullYear(d);
 
-const words = ["Frontend Developer", "Software Engineer", "Social Engineer", "IT Specialist", "Applicant", "Web Developer"];
+const words = ["Frontend Developer", "Software Engineer", "Social Engineer", "IT Specialist", "Web Developer"];
 const typingDelay = 150;
 const erasingDelay = 100;
 const newLetterDelay = 1000;
