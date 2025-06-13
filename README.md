@@ -32,4 +32,4 @@ To run the project locally:
 
 ## Mini Game
 
-Go sleep
+Go sleep f
