@@ -433,10 +433,32 @@
                         Inspirational Moment of past year.
                     </h1>
 
-                    <p class="story__description">
+                    <p class="story__description hidden-text">
+                        <style>
+                            .hidden-text {
+                                user-select: none;
+                                color: transparent;
+                                background-color: #ccc;
+                                border-radius: 4px;
+                                display: inline-block;
+                                padding: 4px 8px;
+                                position: relative;
+                                cursor: default;
+                                filter: blur(6px);
+                                transition: filter 0.3s;
+                            }
+
+                            /* Заблокируем клик */
+                            .hidden-text::after {
+                                content: "ERROR";
+                                position: absolute;
+                                inset: 0;
+                            }
+                        </style>
                         <strong>2024&2025: Years of Growth, Dreams, and Determination.</strong>
 
-                        2024 and 2025 have been a transformative and inspiring year in my life. It is the year I embraced my
+                        2024 and 2025 have been a transformative and inspiring year in my life. It is the year I
+                        embraced my
                         dreams, overcame challenges, and set my sights on a bright future in programming and studying
                         abroad. <br>
 
@@ -453,7 +475,8 @@
                         innovations could improve people's lives. <br>
 
                         <br><strong>Preparing for Studying Abroad.</strong>
-                        2024 and 2025 have been the years when I solidified my dream of studying abroad. After years of planning, I
+                        2024 and 2025 have been the years when I solidified my dream of studying abroad. After years of
+                        planning, I
                         took significant steps to make this dream a reality. I began actively preparing for English
                         proficiency tests, marking a turning point in my academic journey.
 
@@ -483,7 +506,8 @@
                         times. <br>
 
                         <br><strong>Conclusion.</strong>
-                        2024 and 2025 has been a year of discovery, growth, and resilience. It has taught me the value of hard
+                        2024 and 2025 has been a year of discovery, growth, and resilience. It has taught me the value
+                        of hard
                         work, the importance of dreaming big, and the power of believing in myself.
 
                         I am ready to turn my aspirations into reality and continue my journey toward a life filled with
