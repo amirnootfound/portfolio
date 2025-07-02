@@ -1,4 +1,4 @@
-# Portfolio Website
+# My WebSite
 
 This is my personal portfolio website showcasing my projects, skills, and achievements in the field of programming and technology. The website includes sections highlighting my work, technologies I use, and contact information, allowing potential employers and clients to learn more about me.
 
@@ -10,7 +10,7 @@ This website is created to display my accomplishments in IT, software developmen
 - **Design and Development**: The entire site was designed and developed from me.
 - **Interactivity**: Includes animations and user interactions to demonstrate my frontend development skills.
 - **Responsiveness**: The website is responsive and optimized for different screen sizes and devices.
-- **Typography**: I drop into the site fonts which is actually - San Francisco "Text" and "Display" fonts (SF Pro Text, SF Pro Display) by Apple.
+- **Typography**: downloaded some fonts - San Francisco "Text" and "Display" fonts (SF Pro Text, SF Pro Display) by Apple.
 
 ## Technologies Used
 
@@ -32,4 +32,4 @@ To run the project locally:
 
 ## Mini Game
 
-Go sleep
+Go sleep f
